@@ -1,0 +1,4 @@
+(defpackage :cl-fun
+  (:use :cl-user))
+
+(in-package :cl-fun)
