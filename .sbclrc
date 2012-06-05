@@ -1,0 +1,11 @@
+
+;;; The following lines added by ql:add-to-init-file:
+#-quicklisp
+(let ((quicklisp-init (merge-pathnames "quicklisp/setup.lisp"
+                                       (user-homedir-pathname))))
+  (when (probe-file quicklisp-init)
+    (load quicklisp-init)))
+
+(push #p"/home/nipra/Programs/CL/cl-fun/" asdf:*central-registry*)
+;; (asdf:oos 'asdf:load-op :cl-fun)
+(ql:quickload "cl-fun")
