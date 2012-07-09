@@ -7,7 +7,19 @@
 
 (defsystem :cl-fun
   :serial t
-  :depends-on (#:lparallel)
+  :depends-on (#:lparallel
+               #:postmodern
+               #:clsql
+               #:cl-fad
+               #:montezuma
+               #:hunchentoot
+               #:cl-ppcre
+               #:toot
+               ;; Dependency issue with libbcrypt
+               ;; #:whistle
+               #:cl-dropbox
+               #:cl-html-parse
+               #:drakma)
   :components ((:file "packages")
                (:module "scratch"
                         :serial t
