@@ -19,7 +19,12 @@
                ;; #:whistle
                #:cl-dropbox
                #:cl-html-parse
-               #:drakma)
+               #:drakma
+               ;; https://github.com/blindglobe/common-lisp-stat
+               ;; Facing issue with installation
+               ;; https://github.com/blindglobe/rsm-string-cls/issues/1
+               ;; #:cls
+               )
   :components ((:file "packages")
                (:module "scratch"
                         :serial t
