@@ -21,3 +21,6 @@
 ;; (declaim (optimize (debug 0)
 ;;                    (safety 0)
 ;;                    (speed 3)))
+
+(defun hello ()
+  (format t "Hello World!~%"))

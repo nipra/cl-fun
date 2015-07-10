@@ -28,4 +28,4 @@
   :components ((:file "packages")
                (:module "scratch"
                         :serial t
-                        :components ((:file "fun")))))
+                        :components ((:file "exploration")))))
